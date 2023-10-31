@@ -69,6 +69,11 @@ function Category() {
                     </Stack>
                     <Stack p={2} width={"100%"} >
                         <Stack bgcolor="rgba(255, 255, 255, 0.5)" border="1px solid #aaa" borderRadius={2} justifyContent={{ xs: "center", xl: "flex-start" }} p={3} direction="row" gap={3} sx={{ flexWrap: "wrap" }} >
+                            <Stack sx={{ boxShadow: "4px 4px 25px 0px #222121", background: "linear-gradient(94deg, rgba(223, 107, 0, 0.5) 1.33%, rgba(255, 230, 0, 0.5) 52.99%)" }} p="5% 25%" borderRadius={4}>
+                                <Typography variant='h5' fontWeight={500}>
+                                    {title}
+                                </Typography>
+                            </Stack>
                             {router.query.category === "forklift" && data.map((item) => (
                                 <Stack alignItems="center" sx={{ borderRadius: 8, margin: 0 }} key={item.id} bgcolor="#423F3F">
                                     <Image style={{ borderTopRightRadius: 8, borderTopLeftRadius: 8 }} src={item.img} width={361} height={400} alt="test" />
