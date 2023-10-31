@@ -30,8 +30,8 @@ const Home = () => {
         <link rel="icon" href="/logo.ico" />
       </Head>
       <Layout isMenu={isKatalog}>
-        <Stack direction="row" height="100%">
-          <Stack display={isKatalog ? "" : "none"} width="15%" borderRight={{ xs: undefined, xl: "4px solid rgba(0, 0, 0, 0.65)" }} sx={{ borderTopRightRadius: { xs: 0, xl: 16 } }} height={height - 285} bgcolor="#333">
+        <Stack direction={{ xl: "row" }} height="100%">
+          <Stack display={isKatalog ? "" : "none"} width={{ xl: "18%" }} borderRight={{ xs: undefined, xl: "4px solid rgba(0, 0, 0, 0.65)" }} sx={{ borderTopRightRadius: { xs: 0, xl: 16 } }} bgcolor="#333">
             <Sidebar />
           </Stack>
           <Stack width={isKatalog ? "85%" : "100%"}>
