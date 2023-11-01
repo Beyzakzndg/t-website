@@ -21,6 +21,8 @@ function Layout({
                 <Stack height="200px" direction="row">
                     <Image width={200} height={200} src="/Lines.png" alt="LOGO" />
                     <Stack border="2px solid #000" position="absolute" zIndex={99} top={isMenu ? 25 : 10} bottom={0} left={82} boxShadow={8} right={0} width={180} height={180} borderRadius="720px" bgcolor="#E4DB00">
+                        {/* <Image style={{ borderTopRightRadius: 8, borderTopLeftRadius: 8 }} src="logo.svg" width={180} height={200} alt="test" /> */}
+                        <Image style={{ borderTopRightRadius: 8, borderTopLeftRadius: 8 }} src="logo.svg" width={180} height={200} alt="test" />
                     </Stack>
                 </Stack>
                 <Stack alignSelf="flex-end" sx={{
