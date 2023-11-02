@@ -14,7 +14,7 @@ function Sidebar() {
     });
     return (
         <List sx={{ p: 0 }}>
-            {['Forklift', 'İstif Makinesi', 'Transpalet', 'Makaslı Menlift', 'Makaslı Menlift'].map((text, index) => (
+            {['Forklift', 'İstif Makinesi', 'Transpalet', 'Makaslı Menlift', 'Lastik'].map((text, index) => (
                 <>
                     <ListItem key={text} disablePadding>
                         <ListItemButton
