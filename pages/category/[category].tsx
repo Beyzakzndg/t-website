@@ -14,9 +14,10 @@ import Head from 'next/head';
 function Category() {
     const router = useRouter();
     const [title, setTitle] = useState("")
+    
     useEffect(() => {
-        if (router.query.category === "forklift") {
-            setTitle("Forklift")
+        if (router.query.category === "dizel-forklift") {
+            setTitle("Dizel Forklift")
         }
         else if (router.query.category === "elektrikli-forklift") {
             setTitle("Elektirikli Forklift")
@@ -75,7 +76,7 @@ function Category() {
                                 </Typography>
                             </Stack>
                             <Stack justifyContent={{ xs: "center", xl: "flex-start" }} p={3} direction="row" gap={3} sx={{ flexWrap: "wrap" }}>
-                                {router.query.category === "forklift" && data.map((item) => (
+                                {router.query.category === "dizel-forklift" && data.map((item) => (
                                     <Stack alignItems="center" sx={{ borderRadius: 8, margin: 0 }} key={item.id} bgcolor="#423F3F">
                                         <Image style={{ borderTopRightRadius: 8, borderTopLeftRadius: 8 }} src={item.img} width={361} height={400} alt="test" />
                                         <Typography sx={{ height: "55px", padding: "15px", color: "#ffff" }}>{item.name}</Typography>

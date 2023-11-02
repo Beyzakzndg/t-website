@@ -14,7 +14,7 @@ function Sidebar() {
     });
     return (
         <List sx={{ p: 0 }}>
-            {['Forklift', 'İstif Makinesi', 'Transpaletter', 'Makaslı Menlift', 'Lastikler'].map((text, index) => (
+            {['Forklift', 'İstif Makinesi', 'Transpalet', 'Makaslı Menlift', 'Makaslı Menlift'].map((text, index) => (
                 <>
                     <ListItem key={text} disablePadding>
                         <ListItemButton
@@ -71,7 +71,7 @@ function Sidebar() {
                     </ListItem >
                     {index === 0 && <Collapse in={openCollapsers.forklift} timeout="auto" unmountOnExit>
                         <List sx={{ p: 0 }}>
-                            {[{ name: 'Forklift', slug: "forklift" }, { name: 'Elektirikli Forklift', slug: "elektrikli-forklift" }].map((text, index) => (
+                            {[{ name: 'Dizel Forklift', slug: "dizel-forklift" }, { name: 'Elektirikli Forklift', slug: "elektrikli-forklift" }].map((text, index) => (
                                 <ListItem key={text.slug} disablePadding>
                                     <ListItemButton
                                         onClick={() => {
@@ -102,7 +102,7 @@ function Sidebar() {
                     </Collapse>}
                     {index === 1 && <Collapse in={openCollapsers.istifMakinesi} timeout="auto" unmountOnExit>
                         <List sx={{ p: 0 }}>
-                            {[{ name: 'Akülü İstif', slug: "akulu-istif" }, { name: 'Manuel İstif Makinesi', slug: "manuel-istif" }].map((text, index) => (
+                            {[{ name: 'Akülü İstif Makinesi', slug: "akulu-istif" }, { name: 'Manuel İstif Makinesi', slug: "manuel-istif" }].map((text, index) => (
                                 <ListItem key={text.slug} disablePadding>
                                     <ListItemButton
                                         onClick={() => {
@@ -133,7 +133,7 @@ function Sidebar() {
                     </Collapse>}
                     {index === 2 && <Collapse in={openCollapsers.transpalet} timeout="auto" unmountOnExit>
                         <List sx={{ p: 0 }}>
-                            {[{ name: 'Manuel Transpalet', slug: "manuel-transpalet" },
+                            {[{ name: 'Manuel Transpaletter', slug: "manuel-transpalet" },
                             { name: 'Akülü Transpalet', slug: "akulu-transpalet" },
                             { name: 'Terazili Transpalet', slug: "terazili-transpalet" },
                             { name: 'Özel Transpalet', slug: "ozel-transpalet" }].map((text, index) => (
