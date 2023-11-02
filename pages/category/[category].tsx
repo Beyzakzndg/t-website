@@ -69,7 +69,7 @@ function Category() {
                     </Stack>
                     <Stack p={2} width={"100%"} >
                         <Stack bgcolor="rgba(255, 255, 255, 0.5)" border="1px solid #aaa" borderRadius={2} >
-                            <Stack width={{xs:"70%",xl:"50%"}} alignSelf="center" textAlign="center" mt={3} sx={{ boxShadow: "4px 4px 25px 0px #222121", background: "linear-gradient(94deg, rgba(223, 107, 0, 0.5) 1.33%, rgba(255, 230, 0, 0.5) 52.99%)" }} p="2% 10%" borderRadius={4}>
+                            <Stack width={{ xs: "70%", xl: "50%" }} alignSelf="center" textAlign="center" mt={3} sx={{ boxShadow: "4px 4px 25px 0px #222121", background: "linear-gradient(94deg, rgba(223, 107, 0, 0.5) 1.33%, rgba(255, 230, 0, 0.5) 52.99%)" }} p="2% 10%" borderRadius={4}>
                                 <Typography fontSize="24px" fontWeight={500}>
                                     {title}
                                 </Typography>
